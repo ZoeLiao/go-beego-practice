@@ -47,6 +47,7 @@ _color: white
 - Beego offers:
   - automated testing and code hot compiling,
   - native HTTP package for high performance
+- Beego supports smarty
 - Go 1.1+
 
 ---
