@@ -10,6 +10,8 @@ type MainController struct {
 
 func (c *MainController) Get() {
 	c.Data["Website"] = "beego.me"
+	c.Data["ChatroomUrl"] = "localhost:8080/chatroom"
+	c.Data["Chatroom"] = "chatroom"
 	c.Data["Email"] = "astaxie@gmail.com"
 	c.TplName = "index.tpl"
 }

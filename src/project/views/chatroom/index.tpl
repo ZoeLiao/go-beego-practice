@@ -51,7 +51,7 @@
 
   <div id="container">
     <h1>Let's Chat in Chatroom!</h1>
-    <form>
+    <form action="/chatroom/message" method="post">
         <label for="userName">User Name  </label>
         <input name="userName"/>
         <br>
