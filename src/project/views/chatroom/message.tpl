@@ -28,9 +28,38 @@
     }
 
     #chatroom {
-      height: 80vh;
+      height: 500px;
       width: 100%;
       background-color: white;
+    }
+
+    .left-message-group{
+      display: inline;
+      margin-left: -435px;
+    }
+
+    .left-triangle {
+      height: 0;
+      width: 0;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 0;
+      border-color: #ffffff #f7f7f7 transparent transparent;
+      border-style: solid solid dashed dashed;
+      border-width: 10px 20px 0 0;
+      display: inline-block;
+    }
+
+    .left-message {
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      width: fit-content;
+      color: grey;
+      text-align: left;
+      margin-top: 10px;
+      padding: 10px;
+      margin-left: -5px;
+      display: inline-block;
     }
 
     .footer {
@@ -63,8 +92,11 @@
 <body>
 
   <div id="container">
-    <h1>Hi {{.userName}}!</h1>
     <div id="chatroom">
+      <div class="left-message-group">
+        <div class="left-triangle"></div>
+        <div class="left-message">Hi {{.userName}}!</div>
+      </div>
       <div class="footer">
         <input><button>Send</button>
       </div>
