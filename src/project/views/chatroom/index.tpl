@@ -31,6 +31,13 @@
     input {
       height: 20px;
     }
+
+    label {
+      width: 75px;
+      display: inline-block;
+      text-align: left;
+    }
+
     input {
       width: 44%;
     }
@@ -51,9 +58,12 @@
 
   <div id="container">
     <h1>Let's Chat in Chatroom!</h1>
-    <form action="/chatroom/message" method="post">
+    <form id="user" action="/chatroom/message" method="post">
         <label for="userName">User Name  </label>
-        <input name="userName"/>
+        <input name="user_name" type="text"/>
+        <br>
+        <label for="email">Email  </label>
+        <input name="email" type="text"/>
         <br>
         <button>Go!</button>
     <form>
